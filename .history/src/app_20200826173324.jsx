@@ -13,8 +13,8 @@ class App extends React.Component{
                 <h1>Hello React Component</h1>
                 <h3>开始学习React!!!</h3>
                 <Home />
-                <MyNav nav={navHomeList} title="路径导航" />
-                <MyNav nav={navList} title="学习导航" />
+                <MyNav nav={navHomeList} />
+                <MyNav nav={navList} />
             </div>
         )
     }
