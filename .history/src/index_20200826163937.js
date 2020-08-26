@@ -2,12 +2,12 @@
  * @Author: FengZiShuo
  * @Date: 2020-08-26 14:07:51
  * @LastEditors: FengZiShuo
- * @LastEditTime: 2020-08-26 16:42:36
+ * @LastEditTime: 2020-08-26 16:39:37
  */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app'
+import APP from './app'
 
 /* const el = 'React';
 ReactDOM.render(
@@ -29,4 +29,4 @@ ReactDOM.render(
 };
 setInterval(tick,1000) */
 
-ReactDOM.render(<App />,document.getElementById('root'))
+ReactDOM.render(<APP />,document.getElementById('root'))
