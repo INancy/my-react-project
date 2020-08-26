@@ -31,3 +31,7 @@ JSX语法: Javascript + XML语法
     componetWillUnmount: 组件卸载前执行
 
 父子组件传值:
+
+### setState 更新是同步还是异步
+1、setState会引起视图的重绘
+2、在可控的情况下是异步，在非可控的情况下是同步的

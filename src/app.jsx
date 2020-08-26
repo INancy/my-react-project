@@ -3,6 +3,7 @@ import Home from './home'
 import MyNav from './myNav'
 import StateComponent from './stateComponent'
 import ComponentsLife from './componentsLife'
+import SetStateDemo from "./setStateDemo";
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -33,6 +34,9 @@ class App extends React.Component{
                 <hr/>
                 <ComponentsLife title={this.state.title} clickChangeTitle={this.clickChangeTitle }/>
                 {/* <button onClick={ this.clickChangeTitle }>修改生命周期函数文本</button> */}
+
+                <hr/>
+                <SetStateDemo />
             </div>
         )
     }
