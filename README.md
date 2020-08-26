@@ -24,3 +24,10 @@ JSX语法: Javascript + XML语法
 函数列表:
     componentWillMount: 在组件渲染之前执行
     componentDidMount: 在组件渲染之后执行
+    shouldComponentUpdate: 返回true和false，true代表允许改变，false达标不允许改变
+    componentWillUpdate: 数据在改变之前执行(state,props)
+    componentDidUpdate: 数据修改完成(state,props)
+    componentWillReceiveProps: 父组件props发生改变
+    componetWillUnmount: 组件卸载前执行
+
+父子组件传值:

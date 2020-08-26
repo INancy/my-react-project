@@ -6,6 +6,17 @@ import ComponentsLife from './componentsLife'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            title: '我是生命周期文本'
+        }
+    }
+    clickChangeTitle= (data)=> {
+        this.setState({
+            title: data
+        })
+    }
     // 渲染函数
     render() {
         const navHomeList = ['视频', '学习', '首页'];
@@ -20,7 +31,8 @@ class App extends React.Component{
                 <hr/>
                 <StateComponent />
                 <hr/>
-                <ComponentsLife />
+                <ComponentsLife title={this.state.title} clickChangeTitle={this.clickChangeTitle }/>
+                {/* <button onClick={ this.clickChangeTitle }>修改生命周期函数文本</button> */}
             </div>
         )
     }
