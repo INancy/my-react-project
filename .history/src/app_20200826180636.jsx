@@ -2,7 +2,7 @@ import React from 'react'
 import Home from './home'
 import MyNav from './myNav'
 import StateComponent from './stateComponent'
-import ComponentsLife from './componentsLife'
+import componentsLife from './componentsLife'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -20,7 +20,7 @@ class App extends React.Component{
                 <hr/>
                 <StateComponent />
                 <hr/>
-                <ComponentsLife />
+                <componentsLife />
             </div>
         )
     }

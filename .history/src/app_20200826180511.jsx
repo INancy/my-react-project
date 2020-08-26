@@ -2,7 +2,6 @@ import React from 'react'
 import Home from './home'
 import MyNav from './myNav'
 import StateComponent from './stateComponent'
-import ComponentsLife from './componentsLife'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -17,10 +16,8 @@ class App extends React.Component{
                 <Home />
                 <MyNav nav={navHomeList} title="路径导航" />
                 <MyNav nav={navList} title="学习导航" />
-                <hr/>
+                <hr />
                 <StateComponent />
-                <hr/>
-                <ComponentsLife />
             </div>
         )
     }
