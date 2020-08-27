@@ -5,7 +5,7 @@ import StateComponent from './stateComponent'
 import ComponentsLife from './componentsLife'
 import SetStateDemo from "./setStateDemo"
 import IfDemo from './ifDemo'
-import ListDemo from './listDemo'
+import listDemo from './listDemo'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -44,7 +44,7 @@ class App extends React.Component{
                 <IfDemo />
                 <hr/>
                 <h3>列表渲染</h3>
-                <ListDemo />
+                <listDemo />
             </div>
         )
     }
