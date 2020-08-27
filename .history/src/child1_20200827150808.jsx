@@ -7,7 +7,7 @@ export default class Child1 extends React.Component{
             inputVal1: 0
         }
     }
-    componentWillReceiveProps(){
+    componentDidMount(){
         this.setState({
             inputVal1: this.props.money
         })

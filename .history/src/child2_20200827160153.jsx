@@ -21,7 +21,7 @@ export default class Child2 extends React.Component{
         return(
             <div>
                 Child2 - <span>{this.props.money * 7 } </span>
-                <input type="text" value={ this.state.inputVal2 } onChange={ this.changeHandler.bind(this) } />
+                <input type="text" value={ this.props.money * 7 } onChange={ this.changeHandler.bind(this) } />
             </div>
         )
     }

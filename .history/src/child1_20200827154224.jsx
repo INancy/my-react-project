@@ -10,6 +10,8 @@ export default class Child1 extends React.Component{
     componentWillReceiveProps(){
         this.setState({
             inputVal1: this.props.money
+        },()=> {
+            console.log(this.state.money, '1111')
         })
     }
     changeHandler(e){

@@ -18,7 +18,7 @@ export default class SetStateDemo extends React.Component{
         await this.setStateAsync({num: this.state.num+1})
         console.log(this.state.num)
     }
-    // promise
+    // promise 
     setStateAsync(state){
         return new Promise(resolve => {
             this.setState(state,resolve)

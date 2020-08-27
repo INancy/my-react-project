@@ -10,7 +10,6 @@ import FormDemo from './formDemo'
 import RefsAndDemo from './refsAndDemo'
 import RefsDemo from './refsDemo'
 import Parent from './parent'
-import Compose from './compose'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -62,9 +61,7 @@ class App extends React.Component{
                 <Parent />
                 <hr/>
                 <h3>组合 VS 继承</h3>
-                <Compose>
-                    <div>我是组合效果</div>
-                </Compose>
+                <Compose />
             </div>
         )
     }
