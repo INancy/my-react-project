@@ -68,7 +68,7 @@ class App extends React.Component{
                 </Compose>
                 <hr/>
                 <h3>PropsType检查</h3>
-                <PropsTypeDemo title="标题" />
+                <PropsTypeDemo/>
             </div>
         )
     }
