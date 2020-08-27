@@ -8,7 +8,6 @@ import IfDemo from './ifDemo'
 import ListDemo from './listDemo'
 import FormDemo from './formDemo'
 import RefsAndDemo from './refsAndDemo'
-import RefsDemo from './refsDemo'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -54,7 +53,6 @@ class App extends React.Component{
                 <FormDemo />
                 <h4>非受控组件</h4>
                 <RefsAndDemo />
-                <RefsDemo />
             </div>
         )
     }
