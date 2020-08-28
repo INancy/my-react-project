@@ -12,7 +12,6 @@ import RefsDemo from './refsDemo'
 import Parent from './parent'
 import Compose from './compose'
 import PropsTypeDemo from './propsTypeDemo'
-import AntDemo from './antDEmo'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -70,9 +69,6 @@ class App extends React.Component{
                 <hr/>
                 <h3>PropsType检查</h3>
                 <PropsTypeDemo title="标题" />
-                <hr/>
-                <h3>Antd UI组件</h3>
-                <AntDemo />
             </div>
         )
     }
