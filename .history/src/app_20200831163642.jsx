@@ -94,7 +94,7 @@ class App extends React.Component{
                         <Route strict exact path="/mine" component={ MinePage }></Route>
                         <Route path="/mine/center" component={ Center }></Route>
                         {/*<Route path="/demo" render={ ()=> <div>Hello DemoWW</div> }></Route>*/}
-                        <Route path="/demo" render={ (props)=> <Demo {...props} name="你好" /> }></Route>
+                        <Route path="/demo" render={ ()=> <Demo {...props} name="你好" /> }></Route>
                         <Route component={ NoFound }></Route>
                     </Switch>
                 </Router>

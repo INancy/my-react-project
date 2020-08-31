@@ -17,11 +17,7 @@ import FetchDemo from './fetchDemo'
 import HomePage from './pages/Home'
 import MinePage from './pages/Mine'
 // 引入路由
-import { BrowserRouter as Router,Route, Switch } from "react-router-dom";
-import Nav from './components/nav'
-import Center from './pages/Center'
-import NoFound from './pages/NoFound'
-import Demo from './pages/Demo'
+import { Router, Route } from 'react-router'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -88,15 +84,8 @@ class App extends React.Component{
                 <hr/>
                 <h3>React router</h3>
                 <Router>
-                    <Nav />
-                    <Switch>
-                        <Route exact path="/" component={ HomePage }></Route>
-                        <Route strict exact path="/mine" component={ MinePage }></Route>
-                        <Route path="/mine/center" component={ Center }></Route>
-                        {/*<Route path="/demo" render={ ()=> <div>Hello DemoWW</div> }></Route>*/}
-                        <Route path="/demo" render={ (props)=> <Demo {...props} name="你好" /> }></Route>
-                        <Route component={ NoFound }></Route>
-                    </Switch>
+                    <Route path="/home" component={ HomePage }></Route>
+                    <Route path="/mine" component={ MinePage }></Route>
                 </Router>
             </div>
         )

@@ -21,7 +21,6 @@ import { BrowserRouter as Router,Route, Switch } from "react-router-dom";
 import Nav from './components/nav'
 import Center from './pages/Center'
 import NoFound from './pages/NoFound'
-import Demo from './pages/Demo'
 
 //用类的形式创建组件, HOOK形式
 class App extends React.Component{
@@ -93,8 +92,6 @@ class App extends React.Component{
                         <Route exact path="/" component={ HomePage }></Route>
                         <Route strict exact path="/mine" component={ MinePage }></Route>
                         <Route path="/mine/center" component={ Center }></Route>
-                        {/*<Route path="/demo" render={ ()=> <div>Hello DemoWW</div> }></Route>*/}
-                        <Route path="/demo" render={ (props)=> <Demo {...props} name="你好" /> }></Route>
                         <Route component={ NoFound }></Route>
                     </Switch>
                 </Router>
