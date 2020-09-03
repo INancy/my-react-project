@@ -12,8 +12,7 @@ export default class Mine extends React.Component{
     }
     clickHandle(){
         console.log('333333333')
-        console.log(this.props.history.push('/'));
-        this.props.history.push('/')
+        console.log(props)
     }
     render(){
         return(

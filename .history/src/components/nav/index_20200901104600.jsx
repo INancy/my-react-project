@@ -8,7 +8,7 @@ export default class Home extends React.Component{
                 <ul>
                     {/*<li><Link to="/">Home页面</Link></li>
                     <li><Link to="/mine">Mine页面</Link></li>
-                    <li><Link to="/mine/center">Mine页面</Link></li>*/}
+        <li><Link to="/mine/center">Mine页面</Link></li>*/}
                     <li><NavLink activeClassName="selected" exact to="/">Home页面1</NavLink></li>
                     <li><NavLink activeClassName="selected" exact to="/mine">Mine页面1</NavLink></li>
                     <li><NavLink activeClassName="selected" exact to="/mine/center">Mine页面1</NavLink></li>

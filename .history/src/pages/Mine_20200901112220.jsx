@@ -10,16 +10,15 @@ export default class Mine extends React.Component{
         const val = querystring.parse(props.location.search);
         console.log(val['?name'])
     }
-    clickHandle(){
+    clickHandle = () => {
         console.log('333333333')
-        console.log(this.props.history.push('/'));
-        this.props.history.push('/')
+        console.log(props)
     }
     render(){
         return(
             <div>
                 Mine
-                <button onClick={ this.clickHandle.bind(this) }>回到Home页</button>
+                <button onClick={ this.clickHandle }>回到Home页</button>
             </div>
         )
     }
